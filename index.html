@@ -1,0 +1,555 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="jquery.mobile-1.4.5.min.css" />
+    <script src="jquery-1.11.1.min.js"></script>
+    <script src="jquery.mobile-1.4.5.min.js"></script>
+    <title>Soal Latihan 4.2</title>
+  </head>
+  <body>
+    <div data-role="page" id="page1">
+      <div data-role="header" data-position="fixed" data-theme="b">
+        <h1 data-theme="b">BelajarJquery.net</h1>
+        <div data-role="navbar">
+          <ul>
+            <li>
+              <a href="#" data-icon="home" data-transition="slide">&#9679;Home</a>
+            </li>
+            <li>
+              <a href="#page2" data-icon="user" data-transition="slide">Bio</a>
+            </li>
+            <li>
+              <a href="#page3" data-icon="info" data-transition="slide">Tentang</a>
+            </li>
+            <li>
+              <a href="#confirm" data-rel="popup" data-position-to="window" data-icon="power" data-transition="pop"
+                >Keluar</a
+              >
+              <div data-role="popup" id="confirm" data-dismissible="false">
+                <div data-role="header">
+                  <h1>Konfirmasi</h1>
+                </div>
+                <div role="main" class="ui-content">
+                  <h3>Sudah ingin keluar?</h3>
+                  <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-rel="back">Tidak</a>
+                  <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b">Ya</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div>
+        <h1
+          style="
+            height: 80px;
+            margin-left: 5px;
+            margin-right: 5px;
+            background-color: rgb(255, 167, 4);
+            padding-left: 10px;
+            padding-top: 15px;
+            border-radius: 5px;
+          "
+        >
+          HOMEPAGE
+        </h1>
+        <img src="homee.jpg" alt="Snow" style="width: 100%; margin: 2px 5px 2px" />
+        <p
+          style="
+            padding-top: 5%;
+            padding-bottom: 5%;
+            padding-left: 5px;
+            padding-right: 2px;
+            margin-left: 5px;
+            border-radius: 5px;
+            margin-right: 5px;
+            color: rgb(255, 255, 255);
+            background-color: rgb(54, 54, 54);
+          "
+        >
+          Homepage adalah halaman utama yang menjadi pembuka dari situs website Anda. Halaman beranda menjadi halaman
+          penting karena merupakan halaman pertama yang di index atau dibaca terlebih dulu oleh search engine sebelum
+          halaman-halaman lainnya di website.
+        </p>
+        <div>
+          <a href="#pageheader" data-transition="fade" data-role="button">Penjelasan Header</a>
+          <a href="#pagefooter" data-transition="fade" data-role="button">Penjelasan Footer</a>
+          <a href="#pagebutton" data-transition="fade" data-role="button">Penjelasan Button</a>
+          <a href="#pagetransition" data-transition="fade" data-role="button">Penjelasan Transition</a>
+        </div>
+      </div>
+      <div data-role="footer" data-position="fixed" style="background-color: rgb(255, 145, 0); color: black">
+        <h1>&copy; Agim Budiman 2023</h1>
+      </div>
+    </div>
+
+    <div data-role="page" id="page2">
+      <div data-role="header" data-position="fixed" data-theme="b">
+        <h1 data-theme="b">BelajarJquery.net</h1>
+        <div data-role="navbar">
+          <ul>
+            <li>
+              <a href="#page1" data-icon="home" data-transition="slide">Home</a>
+            </li>
+            <li>
+              <a href="#page2" data-icon="user" data-transition="slide">&#9679;Bio</a>
+            </li>
+            <li>
+              <a href="#page3" data-icon="info" data-transition="slide">Tentang</a>
+            </li>
+            <li>
+              <a href="#confirm1" data-rel="popup" data-position-to="window" data-icon="power" data-transition="pop"
+                >Keluar</a
+              >
+              <div data-role="popup" id="confirm1" data-dismissible="false">
+                <div data-role="header">
+                  <h1>Konfirmasi</h1>
+                </div>
+                <div role="main" class="ui-content">
+                  <h3>Sudah ingin keluar?</h3>
+                  <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-rel="back">Tidak</a>
+                  <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b">Ya</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div>
+        <h1
+          style="
+            height: 80px;
+            margin-left: 5px;
+            margin-right: 5px;
+            background-color: rgb(255, 167, 4);
+            padding-left: 10px;
+            padding-top: 15px;
+            border-radius: 5px;
+          "
+        >
+          BIODATA
+        </h1>
+        <p
+          style="
+            padding-top: 5%;
+            padding-bottom: 5%;
+            padding-left: 5px;
+            padding-right: 2px;
+            margin-left: 5px;
+            border-radius: 5px;
+            margin-right: 5px;
+            color: rgb(255, 255, 255);
+            background-color: rgb(54, 54, 54);
+          "
+        >
+          Biodata adalah data biografis seseorang yang berisi tentang idenditas diri dan fakta kehidupan yang digunakan
+          untuk memperkenalkan diri kepada orang lain. Biasanya biodata diri terdiri dari nama, tempat, tanggal lahir,
+          kebangsaan, tempat tinggal, status pernikahan, agama, dan lainnya.
+        </p>
+      </div>
+
+      <div data-role="footer" data-position="fixed" style="background-color: rgb(255, 145, 0); color: black">
+        <h1>&copy; Agim Budiman 2023</h1>
+      </div>
+    </div>
+
+    <div data-role="page" id="page3">
+      <div data-role="header" data-position="fixed" data-theme="b">
+        <h1 data-theme="b">BelajarJquery.net</h1>
+        <div data-role="navbar">
+          <ul>
+            <li>
+              <a href="#page1" data-icon="home" data-transition="slide">Home</a>
+            </li>
+            <li>
+              <a href="#page2" data-icon="user" data-transition="slide">Bio</a>
+            </li>
+            <li>
+              <a href="#page3" data-icon="info" data-transition="slide">&#9679;Tentang</a>
+            </li>
+            <li>
+              <a href="#confirm2" data-rel="popup" data-position-to="window" data-icon="power" data-transition="pop"
+                >Keluar</a
+              >
+              <div data-role="popup" id="confirm2" data-dismissible="false">
+                <div data-role="header">
+                  <h1>Konfirmasi</h1>
+                </div>
+                <div role="main" class="ui-content">
+                  <h3>Sudah ingin keluar?</h3>
+                  <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-rel="back">Tidak</a>
+                  <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b">Ya</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div>
+        <h1
+          style="
+            height: 80px;
+            margin-left: 5px;
+            margin-right: 5px;
+            background-color: rgb(255, 167, 4);
+            padding-left: 10px;
+            padding-top: 15px;
+            border-radius: 5px;
+          "
+        >
+          TENTANG
+        </h1>
+        <p
+          style="
+            padding-top: 5%;
+            padding-bottom: 5%;
+            padding-left: 5px;
+            padding-right: 2px;
+            margin-left: 5px;
+            border-radius: 5px;
+            margin-right: 5px;
+            color: rgb(255, 255, 255);
+            background-color: rgb(54, 54, 54);
+          "
+        >
+          jQuery Mobile adalah sebuah framework web berbasis mobile dan merupakan turunan dari jQuery. Dengan bantuan
+          framework jQuery Mobile ini, maka kita bisa membuat halaman-halaman web yang khusus untuk ditampilkan pada
+          perangkat mobile seperti smartphone, tablet dan sebagainya.
+        </p>
+      </div>
+
+      <div data-role="footer" data-position="fixed" style="background-color: rgb(255, 145, 0); color: black">
+        <h1>&copy; Agim Budiman 2023</h1>
+      </div>
+    </div>
+
+    <div data-role="page" id="pageheader">
+      <div data-role="header" data-position="fixed" data-theme="b">
+        <h1 data-theme="b">BelajarJquery.net</h1>
+        <div data-role="navbar">
+          <ul>
+            <li>
+              <a href="#page1" data-icon="home" data-transition="slide">Home</a>
+            </li>
+            <li>
+              <a href="#page2" data-icon="user" data-transition="slide">Bio</a>
+            </li>
+            <li>
+              <a href="#page3" data-icon="info" data-transition="slide">&#9679;Tentang</a>
+            </li>
+            <li>
+              <a href="#confirm2" data-rel="popup" data-position-to="window" data-icon="power" data-transition="pop"
+                >Keluar</a
+              >
+              <div data-role="popup" id="confirm2" data-dismissible="false">
+                <div data-role="header">
+                  <h1>Konfirmasi</h1>
+                </div>
+                <div role="main" class="ui-content">
+                  <h3>Sudah ingin keluar?</h3>
+                  <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-rel="back">Tidak</a>
+                  <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b">Ya</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div>
+        <h1
+          style="
+            height: 80px;
+            margin-left: 5px;
+            margin-right: 5px;
+            background-color: rgb(255, 167, 4);
+            padding-left: 10px;
+            padding-top: 15px;
+            border-radius: 5px;
+          "
+        >
+          Penjelasan Header
+        </h1>
+        <p
+          style="
+            padding-top: 5%;
+            padding-bottom: 5%;
+            padding-left: 5px;
+            padding-right: 2px;
+            margin-left: 5px;
+            border-radius: 5px;
+            margin-right: 5px;
+            color: rgb(255, 255, 255);
+            background-color: rgb(54, 54, 54);
+          "
+        >
+          Pada jQuery, "header" biasanya merujuk pada elemen HTML 'header', yang merupakan bagian dari struktur halaman
+          web dan biasanya berisi logo, judul, menu navigasi, dan elemen lain yang menunjukkan bagian atas dari halaman
+          web.<br /><br />
+          Dalam konteks jQuery, kita dapat menggunakan metode jQuery seperti .find(), .children(), atau .closest() untuk
+          mencari elemen header dalam dokumen HTML dan kemudian menerapkan fungsi atau metode lain pada elemen tersebut.
+        </p>
+        <div class="ui-grid-a">
+          <div class="ui-block-a">
+            <a href="#page1" class="ui-btn ui-icon-arrow-l ui-btn-icon-left" data-transition="pop">Back</a>
+          </div>
+          <div class="ui-block-b">
+            <a href="#pagefooter" class="ui-btn ui-icon-arrow-r ui-btn-icon-right" data-transition="slide">Next</a>
+          </div>
+        </div>
+      </div>
+
+      <div data-role="footer" data-position="fixed" style="background-color: rgb(255, 145, 0); color: black">
+        <h1>&copy; Agim Budiman 2023</h1>
+      </div>
+    </div>
+
+    <div data-role="page" id="pagefooter">
+      <div data-role="header" data-position="fixed" data-theme="b">
+        <h1 data-theme="b">BelajarJquery.net</h1>
+        <div data-role="navbar">
+          <ul>
+            <li>
+              <a href="#page1" data-icon="home" data-transition="slide">Home</a>
+            </li>
+            <li>
+              <a href="#page2" data-icon="user" data-transition="slide">Bio</a>
+            </li>
+            <li>
+              <a href="#page3" data-icon="info" data-transition="slide">&#9679;Tentang</a>
+            </li>
+            <li>
+              <a href="#confirm2" data-rel="popup" data-position-to="window" data-icon="power" data-transition="pop"
+                >Keluar</a
+              >
+              <div data-role="popup" id="confirm2" data-dismissible="false">
+                <div data-role="header">
+                  <h1>Konfirmasi</h1>
+                </div>
+                <div role="main" class="ui-content">
+                  <h3>Sudah ingin keluar?</h3>
+                  <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-rel="back">Tidak</a>
+                  <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b">Ya</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div>
+        <h1
+          style="
+            height: 80px;
+            margin-left: 5px;
+            margin-right: 5px;
+            background-color: rgb(255, 167, 4);
+            padding-left: 10px;
+            padding-top: 15px;
+            border-radius: 5px;
+          "
+        >
+          Penjelasan Footer
+        </h1>
+        <p
+          style="
+            padding-top: 5%;
+            padding-bottom: 5%;
+            padding-left: 5px;
+            padding-right: 2px;
+            margin-left: 5px;
+            border-radius: 5px;
+            margin-right: 5px;
+            color: rgb(255, 255, 255);
+            background-color: rgb(54, 54, 54);
+          "
+        >
+          Footer pada jQuery Mobile adalah sebuah elemen HTML yang digunakan untuk menampilkan informasi tambahan atau
+          navigasi pada bagian bawah halaman di aplikasi mobile. Footer biasanya berisi tautan ke halaman lain, tombol
+          aksi, atau informasi seperti hak cipta atau tanggal pembuatan aplikasi.<br /><br />
+          Di jQuery Mobile, footer dapat ditambahkan dengan mudah menggunakan elemen data-role="footer". Anda bisa
+          menambahkan konten footer seperti teks, gambar, tombol, dan lain sebagainya ke dalam elemen ini.
+        </p>
+        <div class="ui-grid-a">
+          <div class="ui-block-a">
+            <a href="#pageheader" class="ui-btn ui-icon-arrow-l ui-btn-icon-left" data-transition="pop">Back</a>
+          </div>
+          <div class="ui-block-b">
+            <a href="#pagebutton" class="ui-btn ui-icon-arrow-r ui-btn-icon-right" data-transition="slide">Next</a>
+          </div>
+        </div>
+      </div>
+
+      <div data-role="footer" data-position="fixed" style="background-color: rgb(255, 145, 0); color: black">
+        <h1>&copy; Agim Budiman 2023</h1>
+      </div>
+    </div>
+
+    <div data-role="page" id="pagebutton">
+      <div data-role="header" data-position="fixed" data-theme="b">
+        <h1 data-theme="b">BelajarJquery.net</h1>
+        <div data-role="navbar">
+          <ul>
+            <li>
+              <a href="#page1" data-icon="home" data-transition="slide">Home</a>
+            </li>
+            <li>
+              <a href="#page2" data-icon="user" data-transition="slide">Bio</a>
+            </li>
+            <li>
+              <a href="#page3" data-icon="info" data-transition="slide">&#9679;Tentang</a>
+            </li>
+            <li>
+              <a href="#confirm2" data-rel="popup" data-position-to="window" data-icon="power" data-transition="pop"
+                >Keluar</a
+              >
+              <div data-role="popup" id="confirm2" data-dismissible="false">
+                <div data-role="header">
+                  <h1>Konfirmasi</h1>
+                </div>
+                <div role="main" class="ui-content">
+                  <h3>Sudah ingin keluar?</h3>
+                  <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-rel="back">Tidak</a>
+                  <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b">Ya</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div>
+        <h1
+          style="
+            height: 80px;
+            margin-left: 5px;
+            margin-right: 5px;
+            background-color: rgb(255, 167, 4);
+            padding-left: 10px;
+            padding-top: 15px;
+            border-radius: 5px;
+          "
+        >
+          Penjelasan Button
+        </h1>
+        <p
+          style="
+            padding-top: 5%;
+            padding-bottom: 5%;
+            padding-left: 5px;
+            padding-right: 2px;
+            margin-left: 5px;
+            border-radius: 5px;
+            margin-right: 5px;
+            color: rgb(255, 255, 255);
+            background-color: rgb(54, 54, 54);
+          "
+        >
+          Button pada jQuery Mobile adalah elemen HTML yang digunakan untuk membuat tombol interaktif di aplikasi
+          mobile. Button pada jQuery Mobile biasanya memiliki tampilan yang lebih stylized dan user-friendly
+          dibandingkan dengan button HTML biasa, dengan mengaplikasikan tema dan gaya yang konsisten pada setiap
+          platform dan perangkat.<br /><br />
+          Untuk membuat button pada jQuery Mobile, Anda bisa menggunakan elemen data-role="button" dengan beberapa opsi
+          tambahan, seperti data-theme untuk menentukan tema button, data-icon dan data-iconpos untuk menambahkan ikon
+          pada button, dan data-mini untuk membuat button dengan ukuran yang lebih kecil.
+        </p>
+        <div class="ui-grid-a">
+          <div class="ui-block-a">
+            <a href="#pagefooter" class="ui-btn ui-icon-arrow-l ui-btn-icon-left" data-transition="pop">Back</a>
+          </div>
+          <div class="ui-block-b">
+            <a href="#pagetransition" class="ui-btn ui-icon-arrow-r ui-btn-icon-right" data-transition="slide">Next</a>
+          </div>
+        </div>
+      </div>
+
+      <div data-role="footer" data-position="fixed" style="background-color: rgb(255, 145, 0); color: black">
+        <h1>&copy; Agim Budiman 2023</h1>
+      </div>
+    </div>
+
+    <div data-role="page" id="pagetransition">
+      <div data-role="header" data-position="fixed" data-theme="b">
+        <h1 data-theme="b">BelajarJquery.net</h1>
+        <div data-role="navbar">
+          <ul>
+            <li>
+              <a href="#page1" data-icon="home" data-transition="slide">Home</a>
+            </li>
+            <li>
+              <a href="#page2" data-icon="user" data-transition="slide">Bio</a>
+            </li>
+            <li>
+              <a href="#page3" data-icon="info" data-transition="slide">&#9679;Tentang</a>
+            </li>
+            <li>
+              <a href="#confirm2" data-rel="popup" data-position-to="window" data-icon="power" data-transition="pop"
+                >Keluar</a
+              >
+              <div data-role="popup" id="confirm2" data-dismissible="false">
+                <div data-role="header">
+                  <h1>Konfirmasi</h1>
+                </div>
+                <div role="main" class="ui-content">
+                  <h3>Sudah ingin keluar?</h3>
+                  <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-rel="back">Tidak</a>
+                  <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b">Ya</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div>
+        <h1
+          style="
+            height: 80px;
+            margin-left: 5px;
+            margin-right: 5px;
+            background-color: rgb(255, 167, 4);
+            padding-left: 10px;
+            padding-top: 15px;
+            border-radius: 5px;
+          "
+        >
+          Penjelasan Transition
+        </h1>
+        <p
+          style="
+            padding-top: 5%;
+            padding-bottom: 5%;
+            padding-left: 5px;
+            padding-right: 2px;
+            margin-left: 5px;
+            border-radius: 5px;
+            margin-right: 5px;
+            color: rgb(255, 255, 255);
+            background-color: rgb(54, 54, 54);
+          "
+        >
+          Transition dalam jQuery Mobile adalah efek animasi yang diterapkan ketika sebuah halaman di-load atau ketika
+          pengguna berpindah antara halaman satu dengan yang lain. Transition pada jQuery Mobile digunakan untuk
+          memberikan feedback visual kepada pengguna dan meningkatkan pengalaman pengguna dalam menjelajahi aplikasi
+          mobile.<br /><br />
+          Transition dalam jQuery Mobile adalah efek animasi yang diterapkan ketika sebuah halaman di-load atau ketika
+          pengguna berpindah antara halaman satu dengan yang lain. Transition pada jQuery Mobile digunakan untuk
+          memberikan feedback visual kepada pengguna dan meningkatkan pengalaman pengguna dalam menjelajahi aplikasi
+          mobile.
+        </p>
+        <div class="ui-grid-a">
+          <div class="ui-block-a">
+            <a href="#pagebutton" class="ui-btn ui-icon-arrow-l ui-btn-icon-left" data-transition="pop">Back</a>
+          </div>
+        </div>
+      </div>
+
+      <div data-role="footer" data-position="fixed" style="background-color: rgb(255, 145, 0); color: black">
+        <h1>&copy; Agim Budiman 2023</h1>
+      </div>
+    </div>
+  </body>
+</html>
